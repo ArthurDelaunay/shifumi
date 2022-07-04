@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shifumi</title>
-</head>
-<body>
-    <script src="./index.js"></script>
-</body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shifumi</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header class="height80">
+            <h1>Shifumi, une petite partie ?</h1>
+        </header>
+        <main class="heightFC paddingLeft50 paddingRight50">
+            <section class="flex spaceBetweenJC">
+                <section class="playerSide flex flexColumn gap50">
+                    <h2>Votre côté</h2>
+                    <img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" />
+                    <img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" />
+                    <img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" />
+                </section>
+                <section class="IASide flex flexColumn gap50">
+                    <h2>Votre adversaire</h2>
+                    <img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" />
+                    <img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" />
+                    <img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" />
+                </section>
+            </section>
+            <section class="rules flex">
+                <section>
+                    <h2>Quelles sont les règles ?</h2>
+                    <p>Shifumi est un duel entre deux joueurs. Chaque joueurs doit faire un signe de la main en meme temps: pierre, feuille ou ciseau.</p>
+                    <ul>
+                        <li>La pierre bat le ciseau</li>
+                        <li>Le ciseaux bat la feuille</li>
+                        <li>La feuille bat la pierre</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Comment jouer ?</h2>
+                    <p>Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer et regarder le résultat</p>
+                </section>    
+            </section>
+        </main>
+
+
+        <script src="./index.js"></script>
+    </body>
 </html>

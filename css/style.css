@@ -1,0 +1,37 @@
+/* gestion des tailles de sections*/
+.height80 {
+    height: 80px;
+}
+.heightFC {
+    height: fit-content;
+}
+/* gestion des flex */
+.flex {
+    display: flex;
+}
+.flexColumn {
+    flex-direction: column;
+}
+.spaceBetweenJC {
+    justify-content: space-between;
+}
+.gap50 {
+    gap: 50px;
+}
+
+
+
+/* gestion des marges */
+.paddingLeft50 {
+    padding-left: 50px;
+}
+.paddingRight50 {
+    padding-right: 50px;
+}
+/* gestion des tailles d'images */
+.imgSmallSize {
+    width: 120px;
+}
+.playerSide{
+
+}
