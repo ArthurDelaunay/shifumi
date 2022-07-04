@@ -1,10 +1,18 @@
-/* gestion des tailles de sections*/
-.height80 {
-    height: 80px;
+/* gestion des imports de polices*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap'); /* font-family: 'IM Fell Double Pica', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap'); /* font-family: 'Over the Rainbow', cursive; */
+
+/* gestion des tailles et des couleurs de sections*/
+.height100 {
+    height: 100px;
 }
 .heightFC {
-    height: fit-content;
+    height: 800px;
 }
+.backgroundColorDarkBlue{
+    background-color: rgb(21,32,43);
+}
+
 /* gestion des flex */
 .flex {
     display: flex;
@@ -15,23 +23,79 @@
 .spaceBetweenJC {
     justify-content: space-between;
 }
+.centerJC {
+    justify-content: center;
+}
+.centerAlignItem {
+    align-items: center;
+}
 .gap50 {
     gap: 50px;
 }
-
-
-
+.gap25 {
+    gap: 25px
+}
 /* gestion des marges */
 .paddingLeft50 {
     padding-left: 50px;
 }
+.paddingLeft20 {
+    padding-left: 20px;
+}
 .paddingRight50 {
     padding-right: 50px;
 }
+.paddingTop15 {
+    padding-top: 15px;
+}
+.paddingTop30 {
+    padding-top: 30px;
+}
+.paddingTop70 {
+    padding-top: 70px;
+}
 /* gestion des tailles d'images */
 .imgSmallSize {
-    width: 120px;
+    width: 150px;
 }
-.playerSide{
 
+/* gestion du texte */
+.fontDoublePica {
+    font-family: 'IM Fell Double Pica', serif;
+}
+.fontOverTheRainbow {
+    font-family: 'Over the Rainbow', cursive;
+}
+.fontSize20 {
+    font-size: 20px;
+}
+.fontSize30 {
+    font-size: 30px;
+}
+.fontSize40 {
+    font-size: 40px;
+}
+.textAlignCenter {
+    text-align: center;
+}
+.fontColorWhite {
+    color: #F7F9F9;
+}
+.decorationUnderline {
+    text-decoration: underline;
+}
+/* gestion des puces */
+.backgroundImgStone {
+    background-image : url("../img/logoPierreBlanc.png");
+}
+.backgroundImgScissors {
+    background-image: url("../img/logociseauxBlanc.png");
+}
+.backgroundImgPaper {
+    background-image: url("../img/logoPapierBlanc.png");
+}
+.puce {
+    background-position: 0 0;
+    background-size: 18px;
+    background-repeat: no-repeat;
 }

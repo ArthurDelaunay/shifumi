@@ -4,45 +4,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shifumi</title>
+        <title>Shifumi, wanna play ?</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/logoShifoumiNoir.png">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
-        <header class="height80">
-            <h1>Shifumi, une petite partie ?</h1>
+    <body class="fontColorWhite backgroundColorDarkBlue">
+        <header class="height100 flex centerJC centerAlignItem gap25">
+            <img src="./img/logoShifoumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
+            <h1 class="fontOverTheRainbow fontSize40">Shifumi, une petite partie ?</h1>
+            <img src="./img/logoShifoumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
         </header>
-        <main class="heightFC paddingLeft50 paddingRight50">
-            <section class="flex spaceBetweenJC">
-                <section class="playerSide flex flexColumn gap50">
-                    <h2>Votre côté</h2>
-                    <img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" />
-                    <img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" />
-                    <img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" />
+        <main class="heightFC paddingLeft50 paddingRight50 fontDoublePica fontSize20 paddingTop70">
+            <section class="flex spaceBetweenJC textAlignCenter">
+                <section class="playerSide flex flexColumn gap25 ">
+                    <h2 class="fontSize30">Votre côté</h2>
+                    <button><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
+                    <button><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
+                    <button><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
-                <section class="IASide flex flexColumn gap50">
-                    <h2>Votre adversaire</h2>
-                    <img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" />
-                    <img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" />
-                    <img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" />
+                <section class="IASide flex flexColumn gap25">
+                    <h2 class="fontSize30">Votre adversaire</h2>
+                    <button><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
+                    <button><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
+                    <button><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
             </section>
-            <section class="rules flex">
+            <!--rules -->
+             <section class="flex gap50 paddingTop70"> 
                 <section>
-                    <h2>Quelles sont les règles ?</h2>
-                    <p>Shifumi est un duel entre deux joueurs. Chaque joueurs doit faire un signe de la main en meme temps: pierre, feuille ou ciseau.</p>
-                    <ul>
-                        <li>La pierre bat le ciseau</li>
-                        <li>Le ciseaux bat la feuille</li>
-                        <li>La feuille bat la pierre</li>
+                    <h2 class="decorationUnderline fontSize30">Quelles sont les règles ?</h2>
+                    <p class="paddingTop15">Shifumi est un duel entre deux joueurs. Chaque joueurs doit faire un signe de la main en même temps: pierre, feuille ou ciseaux.</p>
+                    <ul class="paddingTop15 paddingLeft20">
+                        <li class="puce backgroundImgStone paddingLeft20">La pierre bat le ciseau</li>
+                        <li class="puce backgroundImgScissors paddingLeft20">Le ciseaux bat la feuille</li>
+                        <li class="puce backgroundImgPaper paddingLeft20">La feuille bat la pierre</li>
                     </ul>
                 </section>
                 <section>
-                    <h2>Comment jouer ?</h2>
-                    <p>Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer et regarder le résultat</p>
+                    <h2 class="decorationUnderline fontSize30">Comment jouer ?</h2>
+                    <p class="paddingTop15">Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer et regarder le résultat.<br />
+                    <br />Une partie se joue en 5 manches, le premier qui obtient 3 points gagne la partie</p>
                 </section>    
             </section>
         </main>
+        <footer class= "height100 flex centerJC">
+            <p>Copyright by Arthur Delaunay</p>
+        </footer>
 
 
         <script src="./index.js"></script>
