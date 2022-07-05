@@ -1,6 +1,27 @@
+// gestion du reset
+const reset = () => {
+    playerScore = 0
+    opponentScore = 0
+    scoreboardSection.innerHTML = scoreboardSectionDefault.innerHTML
+
+ }
+
+// gestion du bouton de reset
+const createResetButton = () => {
+    scoreboardSection.innerHTML = `${scoreboardSection.innerHTML}<a href=""><button id="resetButton" class="fontDoublePica fontSize20 paddingAll10 fontColorDarkBlue">Une autre partie ?</button></a>`
+}
+
 // gestion du score
 const addToScore = () => {
     scoreboard.innerHTML = `${playerScore} - ${opponentScore}`
+    if (playerScore === 3){
+        scoreboardSection.innerHTML = `${scoreboardSection.innerHTML} <p class="fontSize30 fontColorBlue">YOU WON</p>`
+        createResetButton()
+    }
+    else if (opponentScore === 3){
+        scoreboardSection.innerHTML = `${scoreboardSection.innerHTML} <p class="fontSize30 fontColorRed">YOU LOST</p>`
+        createResetButton()
+    }
 }
 const playerWin = () => {
     playerScore += 1
@@ -17,7 +38,7 @@ const whoWin = (playerResult) => {
     const shifumiValues = ["scissors", "paper", "stone", "scissors"]
     let finalResult = ""
     if (playerResult === opponentResult) {
-        finalResult += "draw !"
+        finalResult += "draw !" // changer pour afficher un résultat
     }
     else {
         const playerResultIndex = shifumiValues.indexOf(playerResult)
@@ -31,7 +52,6 @@ const whoWin = (playerResult) => {
             opponentWin()
         }
     }
-    console.log(finalResult) 
 }
 
 // Shifumi côté adversaire géré aléatoirement 
@@ -57,7 +77,9 @@ const stonePlayerChoice = () => {
 const scissorsButton = document.getElementById("scissorsButton")
 const paperButton = document.getElementById("paperButton")
 const stoneButton = document.getElementById("stoneButton")
+let scoreboardSection = document.getElementById("scoreboardSection")
 let scoreboard = document.getElementById("scoreboard")
+const scoreboardSectionDefault = scoreboardSection.innerHTML
 let playerScore = 0
 let opponentScore = 0
 
@@ -66,6 +88,7 @@ let opponentScore = 0
 scissorsButton.addEventListener("click", scissorsPlayerChoice)
 paperButton.addEventListener("click", paperPlayerChoice)
 stoneButton.addEventListener("click", stonePlayerChoice)
+// resetButton.addEventListener("click", reset)
 
 
 // pour ajouter image setAttribute

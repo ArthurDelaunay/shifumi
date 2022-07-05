@@ -15,27 +15,33 @@
             <h1 class="fontOverTheRainbow fontSize40">Shifumi, une petite partie ?</h1>
             <img src="./img/logoShifumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
         </header>
-        <main class="heightFC paddingLeft50 paddingRight50 fontDoublePica fontSize20 paddingTop70">
+        <main class="heightFC paddingLeft50 paddingRight50 fontDoublePica fontSize20">
             <!-- game -->
             <section class="flex spaceBetweenJC textAlignCenter">
                 <!-- player side -->
                 <section class="playerSide flex flexColumn gap25 ">
                     <h2 class="fontSize30">Votre côté</h2>
-                    <button id="scissorsButton"><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
-                    <button id="paperButton"><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
-                    <button id="stoneButton"><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
+                    <button id="scissorsButton" class="border borderColorBlue paddingAll10"><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
+                    <button id="paperButton" class="border borderColorBlue paddingAll10"><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
+                    <button id="stoneButton" class="border borderColorBlue paddingAll10"><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
+                <div class="flex centerAlignItem">
+                <img class="imgMediumSize border paddingAll10 backgroundColorImg borderColorBlue" src="./img/point-dinterrogation.png" alt="plusieurs points d'interrogation" />
+                </div>
                 <!-- scoreboard -->
-                <section>
+                <section id="scoreboardSection" class="flex flexColumn centerJC width130 gap25">
                     <h2 class="fontSize30">Score</h2>
                     <p id="scoreboard" class="fontOverTheRainbow fontSize30">-</p>
                 </section>
                 <!-- opponent side -->
+                <div class="flex centerAlignItem">
+                    <img class="imgMediumSize border paddingAll10 backgroundColorImg borderColorRed" src="./img/point-dinterrogation.png" alt="plusieurs points d'interrogation" />
+                </div>
                 <section class="IASide flex flexColumn gap25">
                     <h2 class="fontSize30">Votre adversaire</h2>
-                    <button><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
-                    <button><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
-                    <button><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
+                    <button class="border borderColorRed paddingAll10"><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
+                    <button class="border borderColorRed paddingAll10"><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
+                    <button class="border borderColorRed paddingAll10"><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
             </section>
             <!-- rules -->
@@ -51,14 +57,14 @@
                 </section>
                 <section>
                     <h2 class="decorationUnderline fontSize30">Comment jouer ?</h2>
-                    <p class="paddingTop15">Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer et regarder le résultat.<br />
+                    <p class="paddingTop15">Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer de votre côté et regarder le résultat.<br />
                     <br />Une partie se joue en 5 manches, le premier qui obtient 3 points gagne la partie.</p>
                 </section>    
             </section>
         </main>
-        <footer class= "flex centerJC">
+        <!-- <footer class= "flex centerJC">
             <p>Copyright by Arthur Delaunay</p>
-        </footer>
+        </footer> -->
 
 
         <script src="./index.js"></script>

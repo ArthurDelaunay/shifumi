@@ -12,7 +12,9 @@
 .backgroundColorDarkBlue{
     background-color: rgb(21,32,43);
 }
-
+.width130 {
+    width: 130px;
+}
 /* gestion des flex */
 .flex {
     display: flex;
@@ -35,6 +37,7 @@
 .gap25 {
     gap: 25px
 }
+
 /* gestion des marges */
 .paddingLeft50 {
     padding-left: 50px;
@@ -54,9 +57,30 @@
 .paddingTop70 {
     padding-top: 70px;
 }
-/* gestion des tailles d'images */
+.paddingAll10 {
+    padding: 10px;
+}
+/* gestion des images */
 .imgSmallSize {
     width: 150px;
+    height: 150px;
+}
+.imgMediumSize {
+    width: 200px;
+    height: 200px;
+}
+.border {
+    border: 3px solid;
+    border-radius: 10px;
+}
+.borderColorBlue {
+    border-color: #119FBE;
+}
+.borderColorRed {
+    border-color: rgb(161, 17, 17);
+} 
+.backgroundColorImg {
+    background-color: #F7F9F9;
 }
 
 /* gestion du texte */
@@ -80,6 +104,15 @@
 }
 .fontColorWhite {
     color: #F7F9F9;
+}
+.fontColorBlue {
+    color: #119FBE;
+}
+.fontColorDarkBlue {
+    color: rgb(21,32,43);
+}
+.fontColorRed {
+    color: rgb(161, 17, 17);
 }
 .decorationUnderline {
     text-decoration: underline;
