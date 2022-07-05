@@ -5,24 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shifumi, wanna play ?</title>
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/logoShifoumiNoir.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/logoShifumiNoir.png">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="fontColorWhite backgroundColorDarkBlue">
         <header class="height100 flex centerJC centerAlignItem gap25">
-            <img src="./img/logoShifoumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
+            <img src="./img/logoShifumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
             <h1 class="fontOverTheRainbow fontSize40">Shifumi, une petite partie ?</h1>
-            <img src="./img/logoShifoumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
+            <img src="./img/logoShifumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
         </header>
         <main class="heightFC paddingLeft50 paddingRight50 fontDoublePica fontSize20 paddingTop70">
+            <!-- game -->
             <section class="flex spaceBetweenJC textAlignCenter">
+                <!-- player side -->
                 <section class="playerSide flex flexColumn gap25 ">
                     <h2 class="fontSize30">Votre côté</h2>
                     <button id="scissorsButton"><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
                     <button id="paperButton"><img class="imgSmallSize" src="./img/feuille2.svg" alt="une feuille de papier" /></button>
                     <button id="stoneButton"><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
+                <!-- scoreboard -->
+                <section>
+                    <h2 class="fontSize30">Score</h2>
+                    <p id="scoreboard" class="fontOverTheRainbow fontSize30">-</p>
+                </section>
+                <!-- opponent side -->
                 <section class="IASide flex flexColumn gap25">
                     <h2 class="fontSize30">Votre adversaire</h2>
                     <button><img class="imgSmallSize" src="./img/ciseaux1.svg" alt="des ciseaux" /></button>
@@ -30,7 +38,7 @@
                     <button><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
             </section>
-            <!--rules -->
+            <!-- rules -->
              <section class="flex gap50 paddingTop70"> 
                 <section>
                     <h2 class="decorationUnderline fontSize30">Quelles sont les règles ?</h2>
@@ -44,7 +52,7 @@
                 <section>
                     <h2 class="decorationUnderline fontSize30">Comment jouer ?</h2>
                     <p class="paddingTop15">Ici vous jouez contre un ordinateur, choisissez simplement quel coup vous voulez jouer et regarder le résultat.<br />
-                    <br />Une partie se joue en 5 manches, le premier qui obtient 3 points gagne la partie</p>
+                    <br />Une partie se joue en 5 manches, le premier qui obtient 3 points gagne la partie.</p>
                 </section>    
             </section>
         </main>
