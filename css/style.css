@@ -37,7 +37,12 @@
 .gap25 {
     gap: 25px
 }
-
+.display-none {
+    visibility: hidden;
+}
+.display-yes {
+    visibility: visible;
+}
 /* gestion des marges */
 .paddingLeft50 {
     padding-left: 50px;
