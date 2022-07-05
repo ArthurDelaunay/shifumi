@@ -3,17 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap'); /* font-family: 'Over the Rainbow', cursive; */
 
 /* gestion des tailles et des couleurs de sections*/
+.height80 {
+    height: 80px;
+}
 .height100 {
     height: 100px;
 }
 .heightFC {
-    height: 800px;
+    height: fit-content;
 }
 .backgroundColorDarkBlue{
     background-color: rgb(21,32,43);
 }
 .width130 {
     width: 130px;
+}
+.width20p100 {
+    width: 20%;
 }
 /* gestion des flex */
 .flex {
@@ -38,10 +44,10 @@
     gap: 25px
 }
 .display-none {
-    visibility: hidden;
+    display: none;
 }
-.display-yes {
-    visibility: visible;
+.display-block {
+    display: block;
 }
 /* gestion des marges */
 .paddingLeft50 {
@@ -83,7 +89,10 @@
 }
 .borderColorRed {
     border-color: rgb(161, 17, 17);
-} 
+}
+.borderColorDarkBlue {
+    border-color: rgb(21,32,43);
+}
 .backgroundColorImg {
     background-color: #F7F9F9;
 }
@@ -94,6 +103,9 @@
 }
 .fontOverTheRainbow {
     font-family: 'Over the Rainbow', cursive;
+}
+.fontSize16 {
+    font-size: 15px;
 }
 .fontSize20 {
     font-size: 20px;
@@ -118,6 +130,9 @@
 }
 .fontColorRed {
     color: rgb(161, 17, 17);
+}
+.fontColorViolet {
+    color: rgb(161, 17, 160)
 }
 .decorationUnderline {
     text-decoration: underline;

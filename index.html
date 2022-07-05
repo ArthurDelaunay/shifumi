@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="fontColorWhite backgroundColorDarkBlue">
-        <header class="height100 flex centerJC centerAlignItem gap25">
+        <header class="height80 flex centerJC centerAlignItem gap25">
             <img src="./img/logoShifumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
             <h1 class="fontOverTheRainbow fontSize40">Shifumi, une petite partie ?</h1>
             <img src="./img/logoShifumiBlanc.png" alt="mains qui font les signes de 'pierre, feuille et ciseaux' en cercle" />
@@ -29,10 +29,13 @@
                     <img id="playerChoice" class="imgMediumSize border paddingAll10 backgroundColorImg borderColorBlue" src="./img/point-dinterrogation.png" alt="plusieurs points d'interrogation" />
                 </div>
                 <!-- scoreboard -->
-                <section id="scoreboardSection" class="flex flexColumn centerJC width130 gap25">
-                    <h2 class="fontSize30">Score</h2>
-                    <p id="scoreboard" class="fontOverTheRainbow fontSize30">-</p>
-                    <button id="resetButton" class="fontDoublePica fontSize20 paddingAll10 fontColorDarkBlue">Une autre partie ?</button>
+                <section class="flex flexColumn centerJC width130 gap25">
+                    <section id="scoreboardSection" class="flex flexColumn centerJC width130 gap25">
+                        <h2 class="fontSize30">Score</h2>
+                        <p id="scoreboard" class="fontOverTheRainbow fontSize30">-</p>
+                        <div id="drawMessage"></div>
+                    </section>
+                    <button id="resetButton" onclick="location.reload()" class="fontDoublePica fontSize20 paddingAll10 fontColorDarkBlue border borderColorDarkBlue display-none">Une autre partie ?</button>
                 </section>
                 <!-- opponent side -->
                 <div class="flex centerAlignItem">
@@ -45,8 +48,21 @@
                     <button class="border borderColorRed paddingAll10"><img class="imgSmallSize" src="./img/stone2.svg" alt="une pierre cartoon" /></button>
                 </section>
             </section>
+            <!-- round logs -->
+            <section id="logRounds" class="flex spaceBetweenJC height80 paddingTop15">
+                <article id="round1">
+                </article>
+                <article id="round2">
+                </article>
+                <article id="round3">
+                </article>
+                <article id="round4">
+                </article>
+                <article id="round5">
+                </article>
+            </section>
             <!-- rules -->
-             <section class="flex gap50 paddingTop70"> 
+             <section class="flex gap50"> 
                 <section>
                     <h2 class="decorationUnderline fontSize30">Quelles sont les règles ?</h2>
                     <p class="paddingTop15">Shifumi est un duel entre deux joueurs. Chaque joueurs doit faire un signe de la main en même temps: pierre, feuille ou ciseaux.</p>
@@ -63,11 +79,7 @@
                 </section>    
             </section>
         </main>
-        <!-- <footer class= "flex centerJC">
-            <p>Copyright by Arthur Delaunay</p>
-        </footer> -->
-
-
+      
         <script src="./index.js"></script>
     </body>
 </html>
